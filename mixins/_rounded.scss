@@ -1,0 +1,21 @@
+// Border Radius helpers
+$default-round-size: 6px;
+
+// =radius
+// Shorthand for border-radius
+@mixin radius( $radius ) {
+  @include border-radius( $radius );
+}
+
+
+// =rounded
+// px $size Size of border radius, will convert from px to ems
+@mixin rounded( $size: $default-round-size ) {
+  @include border-radius( emCalc( $size ) );
+}
+
+// =cirlce
+// Creates rounded border radius
+@mixin circle{
+  @include rounded( 500px );
+}
