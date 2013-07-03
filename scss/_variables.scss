@@ -1,0 +1,92 @@
+// Global Variables
+// 
+
+
+// =Base Font 
+// Used in calculating em sizes
+$base-font-size:        14px !default;
+
+// =Default Text direction
+$text-direction:        ltr !default;
+
+// Default Left and Right align directions
+$default-align:         left;
+$opposite-align:        right;
+
+// Determine text direction and alignments
+@if $text-direction == ltr {
+
+    $default-align:     left;
+    $opposite-align:    right;
+
+} @else {
+
+    $default-align:     right;
+    $opposite-align:    left;
+
+}
+
+// =Colors
+
+// Light Gray
+$primary-color:     #e9e9e9 !default;
+
+// Dark Blue
+$secondary-color:   #2ba6cb !default;
+
+// Red/Pink
+$control-color:     #c81d57 !default;
+
+// Yellow
+$notate-color:      #f4ec71 !default;
+
+// Light Blue
+$post-color:        #4bbff5 !default;
+
+// Green
+$ask-color:         #5db841 !default; 
+
+
+// =Notification Colors
+
+// Yellow
+$alert-color:       #c09853 !default;
+
+// Green
+$success-color:     #67B821 !default;
+
+// Red
+$error-color:       #b94a48 !default;
+
+// Blue
+$status-color:      #3a87ad !default;
+
+// Light Blue
+$loading-color:     #0e90d2 !default;
+
+
+// =Breakpoints
+// Change these valuese to desired screen sizes
+
+// small and Up
+$small-screen:      emCalc( 768px ) !default; 
+
+// medium and Up
+$medium-screen:     emCalc( 1280px ) !default;
+
+// large and up
+$large-screen:      emCalc( 1440px ) !default; 
+
+// =Media Queries
+// Used in breakpoint mixin
+$screen:            "only screen" !default;
+$small:             "#{$screen} and (min-width: #{$small-screen})" !default;
+$medium:            "#{$screen} and (min-width: #{$medium-screen})" !default;
+$large:             "#{$screen} and (min-width: #{$large-screen})" !default;
+$landscape:         "#{$screen} and (orientation: landscape)" !default;
+$portrait:          "#{$screen} and (orienatation: portrait)" !default;
+
+
+
+
+
